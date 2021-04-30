@@ -1,0 +1,96 @@
+main {
+  display: flex;
+  margin-top: 2vh;
+  align-items: center;
+  justify-content: center;
+
+  .column.left {
+    flex: 1;
+    text-align: end;
+    max-width: 43.75em;
+    padding-right: 1em;
+  }
+
+  .column.separator {
+    width: 0;
+  }
+
+  .column.right {
+    flex: 1;
+    margin-right: 2em;
+    max-width: 22.5em;
+
+    h1 {
+      margin-top: 0.3em;
+    }
+
+    .links {
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+
+      a {
+        margin-right: 0.5rem;
+        text-decoration: none;
+      }
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+  }
+
+  .heading {
+    color: $color-foreground-product-name;
+  }
+
+  .code {
+    background-color: $color-code-background;
+  }
+
+  .google_play_badge {
+    margin-top: 2.5rem !important;
+
+    a {
+      border: none;
+    }
+  }
+
+  .footer {
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width: $break-large) {
+    flex-direction: column;
+    margin-top: 0;
+
+    .column.left {
+      margin-right: 0;
+      padding-right: 0;
+      max-height: 50vw;
+      overflow: hidden;
+    }
+
+    .column.separator {
+      width: 80%;
+      height: 2px;
+      background: rgba(white, 0.2);
+      background: linear-gradient(
+        90deg,
+        rgba($color-foreground, 0) 0%,
+        rgba($color-foreground, .3) 50%,
+        rgba($color-foreground, 0) 100%
+      );
+    }
+
+    .column.right {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      padding: 2em;
+      max-width: 32em;
+    }
+
+    img.app_screenshots {
+      margin: 0;
+    }
+  }
+}

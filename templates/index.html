@@ -1,61 +1,36 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <title>{{ config.title }}</title>
-    
-        <link rel="stylesheet" href="{{ get_url(path='fonts.css') }}">
-        <link rel="stylesheet" href="{{ get_url(path='fontawesome/css/fontawesome.css') }}">
-        <link rel="stylesheet" href="{{ get_url(path='hallo.css') }}">
+{% extends "base.html" %}
 
-        {% if config.extra.theme %}
-            <style>
-                body {
-                    color: {{ config.extra.theme.foreground }} !important;
-                    background-color: {{ config.extra.theme.background }} !important;
-                }
+{% block content %}
 
-                a {
-                    color: {{ config.extra.theme.foreground }} !important;
-                }
+<main>
+  <div class="column left">
+    <img src="{{ get_url(path='images/press_android_screenshots.png') }}" class="app_screenshots" alt="Press screenshots"/>
+  </div>
+  <div class="column separator"></div>
+  <div class="column right">
+    <img src="{{ get_url(path='images/press_app_icon.png') }}" width="48px" alt="Press app icon"/>
+    <h1><span class="heading">Press</span>, a markdown editor that syncs with git</h1>
+    <section>
+      <h3>WYSIWYG</h3>
+      Style and format text with a beautiful inline preview.
 
-                a:hover {
-                    color: {{ config.extra.theme.hover }} !important;
-                }
+      <h3>Own your notes</h3>
+      Press saves your notes as <span class="code">.md</span> files and syncs them with your git account.
 
+      <h3>Open source</h3>
+      <a href="https://github.com/saket/press" target="_blank">github.com/saket/press</a>
+    </section>
 
-                img.portrait {
-                    border: 10px solid {{ config.extra.theme.foreground }} !important;
-                }
-            </style>
-        {% endif %}
-    </head>
-    <body>
-        <main>
-            <div class="column left">
-                <img src="{{ get_url(path='images/portrait.jpg') }}" class="portrait" alt="Portrait" />
-            </div>
-            <div class="column right">
-                <h1>{{ config.extra.greeting | default(value="Hello") }}</h1>
-                <h2>{{ config.extra.iam | default(value="I am") }} {{ config.extra.author.name | default(value="Hallo") }}.</h2>
-                <p>{% include "partials/introduction.html" %}</p>
-                
-                {% if config.extra.links %}
-                    <div class="links">
-                        {% for link in config.extra.links %}
-                            <a rel="me" href="{{ link.url }}" title="{{ link.title }}">
-                                {% if link.iconset %}
-                                    <span class="{{ link.iconset }} {{ 'fa-' ~ link.icon }}"></span>
-                                {% else %}
-                                    <span class="fab {{ 'fa-' ~ link.icon }}"></span>
-                                {% endif %}
-                            </a>
-                        {% endfor %}
-                    </div>
-                {% endif %}
-            </div>
-        </main>
-    </body>
-</html>
+    <section class="google_play_badge">
+      <a href="https://play.google.com/store/apps/details?id=me.saket.press" target="_blank">
+        <img src="{{ get_url(path='images/play_store_badge.png') }}" alt="Download from Play Store"/>
+      </a>
+    </section>
+
+    <section class="footer">
+      Press is maintained by <a href="https://saket.me" target="_blank">Saket Narayan</a> in 🇨🇦. Follow <a href="https://twitter.com/saketme">@saketme</a> on twitter for progress updates.
+    </section>
+  </div>
+</main>
+
+{% endblock content %}

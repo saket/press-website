@@ -1,0 +1,74 @@
+html,
+body {
+  color: $color-foreground;
+  padding: 0;
+}
+
+html {
+  font-family: $sans-serif-body;
+  font-size: 16px;
+  overflow-y: auto;
+}
+
+body {
+  background-color: $color-background;
+}
+
+a {
+  @include transition(color .2s ease-out);
+  color: $color-foreground;
+  text-decoration: none;
+  border-bottom: 2px solid $color-link-underline;
+
+  &:hover {
+    color: $color-link-on-hover;
+    border-bottom-color: $color-link-on-hover;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+  font-family: $sans-serif-heading;
+}
+
+h1 {
+  font-size: 2.0rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  color: $color-heading3;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (max-width: $break-large) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+img.app_screenshots {
+  margin: 2em 3em;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  opacity: 0.5;
+  padding: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}

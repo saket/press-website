@@ -1,0 +1,11 @@
+$color-background: #1C1A1F; // another candidate: #282c34 looks great!
+$color-foreground: #BBB;
+$color-foreground-product-name: #FFF;
+$color-heading3: #CCAEF9;
+$color-link-underline: rgba($color-foreground, 0.4);
+$color-link-on-hover: #8DF0FF;
+$color-code-background: rgba(255, 255, 255, 0.1);
+
+@import 'hallo/variables';
+@import 'hallo/base';
+@import 'hallo/layout';
