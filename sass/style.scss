@@ -1,7 +1,7 @@
 $sans-serif-heading: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
 $sans-serif-body: $sans-serif-heading;
 
-$color-background: #1C1A1F;
+$color-background: #1C1A1F; // Keep in sync with "theme-color" meta property in base.html!
 $color-foreground: #BBB;
 $color-foreground-product-name: #FFF;
 $color-heading3: #CCAEF9;
