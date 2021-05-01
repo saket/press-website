@@ -56,7 +56,6 @@ h3 {
 }
 
 img.app_screenshots {
-  margin: 2em 3em;
   width: 100%;
   height: auto;
 }
@@ -66,4 +65,8 @@ img.app_screenshots {
   padding: 0.5rem 0.5rem 0 0;
   display: flex;
   justify-content: flex-end;
+
+  @media screen and (max-width: $break-large) {
+    display: none;
+  }
 }

@@ -7,8 +7,8 @@ main {
   .column.left {
     flex: 1;
     text-align: end;
-    max-width: 43.75em;
-    padding-right: 1em;
+    max-width: 640px;
+    padding: 2em 1em;
   }
 
   .column.separator {
@@ -64,9 +64,8 @@ main {
     margin-top: 0;
 
     .column.left {
-      margin-right: 0;
-      padding-right: 0;
-      max-height: 50vw;
+      padding: 5vw;
+      max-height: 54vw;
       overflow: hidden;
     }
 
@@ -83,9 +82,8 @@ main {
     }
 
     .column.right {
-      margin-left: 1.5em;
-      margin-right: 1.5em;
-      padding: 2em;
+      margin: 6vw;
+      padding: 0em;
       max-width: 32em;
     }
 
