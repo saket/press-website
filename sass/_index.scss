@@ -1,3 +1,5 @@
+// Styles in the sheet only affect the index page.
+
 main {
   display: flex;
   margin-top: 2vh;
@@ -8,7 +10,7 @@ main {
     flex: 1;
     text-align: end;
     max-width: 640px;
-    padding: 2em 1em;
+    padding: 2em 1em 0em 1em;
   }
 
   .column.separator {
@@ -35,7 +37,7 @@ main {
     }
 
     section {
-      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -53,6 +55,11 @@ main {
     a {
       border: none;
     }
+  }
+
+  img.app_screenshots {
+    width: 100%;
+    height: auto;
   }
 
   .footer {
@@ -82,7 +89,7 @@ main {
     }
 
     .column.right {
-      margin: 6vw;
+      margin: 7vw 10vw;
       padding: 0em;
       max-width: 32em;
     }
@@ -90,5 +97,17 @@ main {
     img.app_screenshots {
       margin: 0;
     }
+  }
+}
+
+.header {
+  opacity: 0.5;
+  padding: 0.5rem 0.5rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media screen and (max-width: $break-large) {
+    display: none;
   }
 }

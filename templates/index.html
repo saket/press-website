@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section class="header">
+  <a href="https://github.com/saket/press-website" target="_blank">Fork this website</a>
+</section>
 
 <main>
   <div class="column left">
@@ -9,8 +12,9 @@
   <div class="column separator"></div>
   <div class="column right">
     <img src="{{ get_url(path='images/press_app_icon.png') }}" width="48px" alt="Press app icon"/>
-    <h1><span class="heading">Press</span>, a markdown editor that syncs with git</h1>
     <section>
+      <h1><span class="heading">Press</span>, a markdown editor that syncs with git</h1>
+
       <h3>WYSIWYG</h3>
       Style and format text with a beautiful inline preview.
 

@@ -1,3 +1,16 @@
+// Styles in this sheet affect all pages.
+
+@mixin selection {
+  ::-moz-selection { @content; }
+  ::selection { @content; }
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+       -moz-transition: $args;
+            transition: $args;
+}
+
 html,
 body {
   color: $color-foreground;
@@ -39,6 +52,7 @@ h1 {
   font-size: 2.0rem;
   line-height: 1.3;
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 h3 {
@@ -52,21 +66,5 @@ h3 {
 @media screen and (max-width: $break-large) {
   h1 {
     font-size: 2.25rem;
-  }
-}
-
-img.app_screenshots {
-  width: 100%;
-  height: auto;
-}
-
-.header {
-  opacity: 0.5;
-  padding: 0.5rem 0.5rem 0 0;
-  display: flex;
-  justify-content: flex-end;
-
-  @media screen and (max-width: $break-large) {
-    display: none;
   }
 }

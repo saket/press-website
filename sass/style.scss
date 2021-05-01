@@ -1,3 +1,6 @@
+$sans-serif-heading: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+$sans-serif-body: $sans-serif-heading;
+
 $color-background: #1C1A1F;
 $color-foreground: #BBB;
 $color-foreground-product-name: #FFF;
@@ -7,6 +10,6 @@ $color-link-on-hover: #8DF0FF;
 $color-code-background: rgba(255, 255, 255, 0.1);
 $color-text-highlight: rgba($color-heading3, 0.25);
 
-@import 'hallo/variables';
-@import 'hallo/base';
-@import 'hallo/layout';
+@import 'viewports';
+@import 'base';
+@import 'index';
