@@ -9,7 +9,7 @@ main {
   .column.left {
     flex: 1;
     text-align: end;
-    max-width: 640px;
+    max-width: 640px; // Unit is in px to sync with the image size.
     padding: 2em 1em 0em 1em;
   }
 
@@ -71,9 +71,10 @@ main {
     margin-top: 0;
 
     .column.left {
-      padding: 5vw;
+      padding: 7vw 0vw 5vw 0vw;
       max-height: 54vw;
       overflow: hidden;
+      max-width: none;
     }
 
     .column.separator {
@@ -89,9 +90,9 @@ main {
     }
 
     .column.right {
-      margin: 7vw 10vw;
+      margin: 7vw 6vw;
       padding: 0em;
-      max-width: 32em;
+      max-width: 36em;
     }
 
     img.app_screenshots {
