@@ -7,13 +7,13 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@saketme" />
-  <meta name="twitter:image" content="{{ get_url(path='images/social_sharing_card.png') }}" />
+  <meta name="twitter:image" content="{{ get_url(path='images/social_sharing_card.png') | safe }}" />
   <meta name="twitter:description" content="Press is a live markdown editor that syncs your notes with git" />
 
   <meta property="og:url" content="https://press.wtf" />
   <meta property="og:site_name" content="press.wtf" />
   <meta property="og:title" content="Press, for Android" />
-  <meta property="og:image" content="{{ get_url(path='images/social_sharing_card.png') }}" />
+  <meta property="og:image" content="{{ get_url(path='images/social_sharing_card.png') | safe }}" />
   <meta property="og:image:width" content="1248" />
   <meta property="og:image:height" content="624" />
 
@@ -28,9 +28,9 @@
   <meta name="keywords" content="android markdown editor, android markdown app, android notes app, markdown git app">
 
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='images/favicon_32.png') }}" />
-  <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path='images/favicon_192.png') }}" />
-  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="{{ get_url(path='images/favicon_192.png') }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='images/favicon_32.png') | safe }}" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ get_url(path='images/favicon_192.png') | safe }}" />
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="{{ get_url(path='images/favicon_192.png') | safe }}" />
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
