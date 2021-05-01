@@ -1,6 +1,6 @@
 // Fonts
-$sans-serif-heading: 'Jost', 'Roboto', sans-serif;
-$sans-serif-body: 'Jost', 'Roboto', sans-serif;
+$sans-serif-heading: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+$sans-serif-body: $sans-serif-heading;
 
 // Responsive breaks
 $break-extra-small: 575px;
