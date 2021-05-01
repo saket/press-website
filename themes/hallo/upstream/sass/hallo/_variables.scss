@@ -14,3 +14,8 @@ $break-extra-large: 1200px;
        -moz-transition: $args;
             transition: $args;
 }
+
+@mixin selection {
+  ::-moz-selection { @content; }
+  ::selection { @content; }
+}

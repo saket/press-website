@@ -2,6 +2,10 @@ html,
 body {
   color: $color-foreground;
   padding: 0;
+
+  @include selection {
+    background: $color-text-highlight;
+  }
 }
 
 html {

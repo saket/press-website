@@ -5,6 +5,7 @@ $color-heading3: #CCAEF9;
 $color-link-underline: rgba($color-foreground, 0.4);
 $color-link-on-hover: #8DF0FF;
 $color-code-background: rgba(255, 255, 255, 0.1);
+$color-text-highlight: rgba($color-heading3, 0.25);
 
 @import 'hallo/variables';
 @import 'hallo/base';
