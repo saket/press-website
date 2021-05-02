@@ -8,9 +8,9 @@ Feel free to use this for your own app's website. This theme was written by a CS
 
 ### Usage
 ```shell
-git clone git@github.com:saket/press-website.git && cd press-website
-brew install zola
-zola serve
+$ git clone git@github.com:saket/press-website.git landing-page && cd landing-page
+$ brew install zola
+$ zola serve
 ```
 
 ### License
