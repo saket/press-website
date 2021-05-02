@@ -4,3 +4,11 @@ title = "Press | Markdown notes for Android"
 compile_sass = true
 highlight_code = false
 build_search_index = false
+
+[extra.social]
+site_name = "press.wtf"
+title = "Press, for Android"
+description = "Press is a live markdown editor that syncs your notes with git"
+image_path = "images/social_sharing_card.png"
+image_w = 1248
+image_h = 624

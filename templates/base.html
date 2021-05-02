@@ -7,15 +7,15 @@
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@saketme" />
-  <meta name="twitter:image" content="https://press-website-4hc5gaqzx-saket.vercel.app/images/social_sharing_card.png" />
-  <meta name="twitter:description" content="Press is a live markdown editor that syncs your notes with git" />
+  <meta name="twitter:image" content="{{ get_url(path=config.extra.social.image_path) | safe }}" />
+  <meta name="twitter:description" content="{{ config.extra.social.description }}" />
 
   <meta property="og:url" content="https://press.wtf" />
-  <meta property="og:site_name" content="press.wtf" />
-  <meta property="og:title" content="Press, for Android" />
-  <meta property="og:image" content="https://press-website-4hc5gaqzx-saket.vercel.app/images/social_sharing_card.png" />
-  <meta property="og:image:width" content="1248" />
-  <meta property="og:image:height" content="624" />
+  <meta property="og:site_name" content="{{ config.extra.social.site_name }}" />
+  <meta property="og:title" content="{{ config.extra.social.title }}" />
+  <meta property="og:image" content="{{ get_url(path=config.extra.social.image_path) | safe }}" />
+  <meta property="og:image:width" content="{{ config.extra.social.image_w }}" />
+  <meta property="og:image:height" content="{{ config.extra.social.image_h }}" />
 
   <!--
     Used by Google Chrome on mobile. Keep in sync with style.css!
@@ -24,7 +24,7 @@
   <meta name="theme-color" content="#1C1A1F">
 
   <title>{{ config.title }}</title>
-  <meta name="description" content="Press is a live markdown editor that syncs your notes with git">
+  <meta name="description" content="{{ config.extra.social.description }}">
   <meta name="keywords" content="android markdown editor, android markdown app, android notes app, markdown git app">
 
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
