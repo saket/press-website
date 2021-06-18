@@ -5,6 +5,21 @@
   ::selection { @content; }
 }
 
+@mixin custom-scrollbar {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(75, 75, 75);
+  }
+}
+
 @mixin transition($args...) {
     -webkit-transition: $args;
        -moz-transition: $args;
@@ -19,6 +34,8 @@ body {
   @include selection {
     background: $color-text-highlight;
   }
+
+  @include custom-scrollbar();
 }
 
 html {
